@@ -33,7 +33,7 @@
       height: auto;
       background-color: var(--dark-green);
       border: 1px solid var(--dark-green);
-      border-radius: 10px;
+      border-radius: 20px;
       padding: 10px 10px 10px 10px;
       margin-top: 10px;
       text-align: center;
@@ -99,6 +99,7 @@
       margin-top: 20px;
       padding: 10px 10px 10px 10px;
       text-align: center;
+      border-radius: 5px;
     }    
       form {
       width: auto;
@@ -111,7 +112,13 @@
         padding: 10px;
         margin-top: 20px;
         size: 20px;
+        border-radius: 5px;
     }
+
+    .p2{
+      margin-top: 20px;
+      size: var(--lg);
+     }
 
 
 
@@ -126,18 +133,20 @@
         </p1>
         
         <br />
+        <br />
+        <br />
 
-        <p2 id="resultP"></p2>
+        <p2 class="p2" id="resultP"></p2>
         
         <form>
 
             <label for="P"></label>
-            <input id="P" type="number"/>
+            <input id="P" type="number" placeholder="$"/>
 
             <br />
             
             <label for="D"></label>
-            <input id="D" type="number"/>
+            <input id="D" type="number" placeholder="%"/>
 
             <br />
             
