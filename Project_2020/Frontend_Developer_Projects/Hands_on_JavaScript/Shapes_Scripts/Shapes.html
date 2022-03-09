@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --dark-green: #00806A;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    body {
+      margin: 5px;
+      font-family: 'Quicksand', sans-serif;
+      display:grid;
+      place-items: center;
+      padding-bottom: 20px;
+      background-color: var(--black);
+}
+      
+      header {
+      width: 500px;
+      height: auto;
+      background-color: var(--dark-green);
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 10px 10px 10px 10px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    h1{width: auto;
+      height: auto;
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 5px 5px 5px 5px;
+      text-align: center;}
+
+    p{width: auto;
+      height: auto;
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 5px 5px 5px 5px;
+      text-align: center;}
+
+      section {
+      width: auto;
+      height: auto;
+      background-color: var(--hospital-green);
+      border: 1px solid var(--hospital-green);
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+
+    form {
+      width: auto;
+      height: auto;
+      margin-top: 5px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      
+    }
+
+    label {
+      width: auto;
+      height: auto;
+      margin-top: 5px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+    }
+
+    input {
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }    
+      form {
+      width: auto;
+      height: auto;
+      padding: 0px 10px 10px 10px;
+      text-align: center;
+    }
+
+    div{
+        margin-top: 20px;
+    }
+    h2{
+        margin: 10px 10px 10px 10px;
+        size:var(--md)
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+    </style>
+    <title class="text1">Geometric Shapes</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Geometric Figures
+        </h1>
+        <p>
+            This is a test program integrating HTML, CSS and JavaScript.
+        </p>
+
+    </header>
+
+    <section>
+        <h2>
+            Calculate the perimeter and area of area of any square
+        </h2>
+        <img class="image" src="./icons/square.png">
+        <form>
+            <label for ="input_square">
+                Please introduce size of each side of your square: 
+
+                    <input id="input_square" type="number" placeholder="Side of your Square" />
+
+                    <div>
+
+                    <button type="button" onclick="buttonA()" >Calculate the perimeter</button>
+
+                    <button type="button" onclick="buttonB()">Calculate the area</button>
+                </div>           
+            </label>
+        </form>
+    </section>
+    
+    <section>
+        <h2>
+            Calculate the perimeter and area of area of any triangle
+        </h2>
+        <img class="image" src="./icons/triangle.png">
+        <form>
+            <label for ="input_triangle">
+                Please introduce dimensions of your of the left side of your triangle. 
+
+                    <div>
+
+                    <input id="input_triangle_1" type="number" placeholder="Base" />
+
+                    <input id="input_triangle_2" type="number" placeholder="Left Side" />
+
+                    <input id="input_triangle_3" type="number" placeholder="Right side" />
+
+                    <input id="triangle_height" type="number" placeholder="Height" />
+
+                    </div>
+
+                    <div>
+
+                    <button type="button" onclick="buttonC()" >Calculate the perimeter</button>
+
+                    <button type="button" onclick="buttonD()">Calculate the area</button>
+                </div>           
+            </label>
+        </form>
+    </section>
+
+    <section>
+        <h2>
+            Calculate the perimeter and area of area of any circle
+        </h2>
+        <img class="image" src="./icons/circle.png">
+        <form>
+            <label for ="input_cicle">
+                Please introduce diameter of your circle: 
+
+                    <input id="input_circle" type="number" placeholder="Diameter" />
+
+                    <div>
+
+                    <button type="button" onclick="buttonE()" >Calculate the perimeter</button>
+
+                    <button type="button" onclick="buttonF()">Calculate the area</button>
+                </div>           
+            </label>
+        </form>
+    </section>
+    
+    <script src="./Shapes_2.js"> </script>
+
+</body>
+</html>

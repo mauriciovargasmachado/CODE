@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #4b54db;
+      --dark-green: #0e12dd;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;}
+
+     
+      body {
+      margin: 5px;
+      font-family: 'Quicksand', sans-serif;
+      display:grid;
+      place-items: center;
+      padding: 30px;
+      background-color: var(--black);
+    color:var(--white);
+    size: var(--lg);}
+
+    header {
+      width: 500px;
+      height: auto;
+      background-color: var(--dark-green);
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 10px 10px 10px 10px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    head{
+        size: var(--md);
+    }
+
+    h1{width: auto;
+      height: auto;
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 5px 5px 5px 5px;
+      text-align: center; size: var(--md);}
+
+    p{width: auto;
+      height: auto;
+      border: 1px solid var(--dark-green);
+      border-radius: 10px;
+      padding: 5px 5px 5px 5px;
+      text-align: center;}
+
+      section {
+      width: auto;
+      height: auto;
+      background-color: var(--hospital-green);
+      border: 1px solid var(--hospital-green);
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+
+    form {
+      width: auto;
+      height: auto;
+      margin-top: 5px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      align-items: center;
+      
+    }
+
+    label {
+      width: auto;
+      height: auto;
+      margin-top: 5px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction:column;
+    align-items: center;
+    }
+
+    input {
+      width: 150px;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }    
+      form {
+      width: auto;
+      height: auto;
+      padding: 0px 10px 10px 10px;
+      text-align: center;
+    }
+    
+    button{
+        padding: 10px;
+        margin-top: 20px;
+        size: 20px;
+    }
+
+
+
+    </style>
+    <title>Calculate Discounts</title>
+</head>
+    With this program you will be able to calculate the discount percentage of your sale.
+<body>
+    <header>
+        <p1>
+            Click the button to get your the price after discounts
+        </p1>
+        
+        <br />
+
+        <p2 id="resultP"></p2>
+        
+        <form>
+
+            <label for="P"></label>
+            <input id="P" type="number"/>
+
+            <br />
+            
+            <label for="D"></label>
+            <input id="D" type="number"/>
+
+            <br />
+            
+            <button type="button" onclick="push_button()">
+                CALCULATE
+            </button>
+
+            
+        
+        </form>
+    <h1>
+        Calculate here your final amount to pay!!!
+    </h1>
+  
+    </header>
+  <script src="./discount.js"></script>
+</body>
+</html>
